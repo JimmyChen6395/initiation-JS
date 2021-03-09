@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemple 07</title>
+    <script>
+        const textEN = "The quick brown fox jumps over the lazy dog";
+        const textFR = "Le vif renard brun saute par-dessus le chien paresseux";
+  
+        function changerLangue(langue){
+           let div = document.getElementById("texte");
+        //    while (div.firstChild){
+        //        div.removeChild(div.firstChild);
+        //    } 
+           if (langue=="fr"){
+               div.appendChild(document.createTextNode(textFR));
+           } 
+           else if (langue=="en"){
+               div.appendChild(document.createTextNode(textEN));
+           } 
+        }                 
+    </script>
+</head>
+<body onload="changerLangue('en')">
+      <div id="texte">
+
+        
+      </div>
+      <br></br>
+      <p>
+        <a href="javascript:changerLangue('fr')">français</a> - 
+        <a href="javascript:changerLangue('en')">english</a>
+      </p>
+  </body>
+</html>

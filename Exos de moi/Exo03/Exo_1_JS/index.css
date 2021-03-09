@@ -1,0 +1,38 @@
+body {
+    background-color: aqua;
+}
+
+.cool {
+    /* background-color: white;
+    box-shadow: 8px 14px 9px 1px #000000;
+    padding: 1rem;
+    width: 28%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    display: flex;
+    height: 100vh;
+    justify-items: center;
+}
+
+#container {
+    background-color: white;
+    box-shadow: 8px 14px 9px 1px #000000;
+    padding: 1.5rem;
+    width: 28%;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+p {
+    display: flex;
+    align-self: center;
+    width: 50%;
+    margin: auto;
+}
+
+img {
+    width: 150px;
+}

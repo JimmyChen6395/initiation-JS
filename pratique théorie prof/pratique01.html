@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratique 01</title>
+    <script>
+        //Déclare mes variables
+        const nom = "Vilain";
+        const prénom = "Guy";
+        var langue = "fr";
+        //Créer une fonction que j'appelle afficher()
+        function afficher(){
+                //Je crée une variable destinée à acceuillir temporairement une valeur
+                let tmp = "";
+                //Condtion si variable langue = fr
+                if (langue == "fr"){
+                    // variable temporaire contriendra le mot "Bonjour"
+                    tmp = "Bonjour";
+                    //Si pas, if variable langue = "en"
+                } else if(langue == "en"){
+                    //Variable temporaire sera = "hello"
+                    tmp = "Hello";
+                } 
+                //Afficher ma boite de dialogue qui contiendra la variable temporaire et les variables nom et prénom
+                alert(tmp + " " + prénom + " " + nom + " !");
+            } 
+     </script> 
+</head>
+<body>
+    <p>
+        <!-- 1ere balise a: ajout d'un evenement onclick pour lancer ma fonction afficher() -->
+        <a href="#" onclick="afficher()">hello</a>
+         -
+         <!-- 2ème balise: ajout d'un évenement onclick qui va passer ma variable langue sur "fr" -->
+        <a href="#" onclick="langue='fr'">français</a>
+         -
+        <!-- 3ème balise: ajout d'un évenement onclick qui va passer ma variable langue sur "en" -->
+        <a href="#" onclick="langue='en'">anglais</a>
+    </p>
+    </body>
+</body>
+</html>
