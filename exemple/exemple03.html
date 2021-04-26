@@ -8,6 +8,9 @@
     <script>
         //Je crée une fonction avec une propriété (couleur). je donnerai la valeur que je veux à cette propriété
         function changer(couleur){
+            //Dans le document, je vais identifier le body sur lequel je vais
+            //Appliquer un style css background-color qui prendra comme valeur
+            //la propriété passée dans ma fonction
             document.body.style.backgroundColor = couleur;                 
         }
 
@@ -15,11 +18,12 @@
 </head>
 <body>
     <p style="color: rgb(143, 143, 143); font-size: 2rem">
+        <!-- sur l'événement onclick, j'appelle ma fonction changer avec en paramètre
+        la couleur à appliquer, dans ce cas, le rouge -->
        <a onclick="changer('red')">rouge</a>
         - <a onclick="changer('green')">vert</a>
-         - <a onclick="changer('blue')">bleu</a> -
-          <a onclick="changer('purple')">Violet</a>
-
+         - <a onclick="changer('blue')">bleu</a> 
+         - <a onclick="changer('purple')">Violet</a>
     </p>
 
 </body>

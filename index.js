@@ -1,4 +1,4 @@
 const nom = "Mouse";
-const prenom = "Mickey";
+const prénom = "Mickey";
 
-alert("Bonjour " + prenom + " " + nom + " !");
+alert("Bonjour " + nom + " " + prénom + " !");

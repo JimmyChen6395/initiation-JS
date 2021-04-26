@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les évènements</title>
+</head>
+<body>
+
+    <!-- VERSION OLD SCHOOL -->
+    <a onclick="return confirm('Se rendre sur le site de l\'ifapme? ')" href="https://www.ifapme.be/">Se rendre sur le site de l'ifapme?</a>
+    <button onmouseover="document.body.style.backgroundColor = 'blue'"
+    onmouseout="document.body.style.backgroundColor = 'white', document.body.style.transition = '0.5s'">Passez au-dessus de moi</button>
+    
+    <!-- VERSION MODERNE -->
+    <p><a id="moderneA" href='#'>Se rendre sur google ? MODERNE</a>
+    
+    <button id="moderneB">Passez au-dessus de moi MODERNE</button></p>
+
+    <!-- VERSION AddEventListener -->
+    <p><a id="moderneAA" href='#'>Se rendre sur google ? LISTENeR</a>
+    
+    <button id="moderneBB">Passez au-dessus de moi LISTENeR</button></p>
+    <!-- Récupérer action du visiteur avec un eventListener -->
+    <p><a id="moderneAAA" href='#'>Se rendre sur google ? ACTION VISITEUR</a>
+        <button id="moderneBBB">Passez au-dessus de moi SUPPRIMER EVENEMENT</button></p>
+
+    <article style="background-color: silver">
+        <h1 id="propa" style="display: inline">Titre de l'article</h1>
+    </article>
+    <script src="exemple20.js"></script>
+</body>
+</html>

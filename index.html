@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ou placer le javascript</title>
 
+    <script>
+        
+        let nom = prompt("Quel est votre nom?");
+        let prénom = prompt("Quel est votre prénom ?");
+
+        alert("ceci est un chaine de caractère " + nom + " " + prénom);
+        
+    </script>
 </head>
-
 <body>
-    <!-- exemple boite de dialogue -->
-    <p>Visiter le site du
-        <a href="http://www.lesoir.be" onclick="return confirm('êtes-vous sur ?');">soir.be</a>
+    <!-- Exemple boite de dialogue confirm() -->
+    <p>Visitez le site du 
+        <a href="http://www.lesoir.be" onclick="return confirm('êtes-vous sûr ?');"> soir.be</a>
     </p>
+    
 
-
-    <script src="index.js"></script>
 </body>
-
 </html>

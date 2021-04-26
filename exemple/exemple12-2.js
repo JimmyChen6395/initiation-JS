@@ -24,12 +24,7 @@ salutation('Maximilien', "Coulon");
 function addition(n1, n2){
     let resultat = n1 + n2;//locale
     console.log(`Le résultat de ${n1}+${n2}= ${resultat}`);
-
-
-
 }
-
-
 
 addition(12, 28);
 addition(120, 360);

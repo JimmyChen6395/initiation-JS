@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+.content{
+    display: flex;
+    background-color: white;
+    max-width: 30rem;
+    padding: 2rem;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    justify-content: center;
+    align-items: center;
+
+}
+
+.description{
+    flex: 3;
+}
+
+.photo{
+    flex: 1;
+}
+
+img{
+    width: 100%;
+}

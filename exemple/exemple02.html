@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exemple 02</title>
     <script>
-        // je déclare un tableuau qui contien plusieurs url
-        let urls = ["http://www.lesoir.be", "http://www.lalibre.be", "http://lemonde.fr"]
-            // je crée une fonction select qui vas viser l'entrée de mon tableau correspondant au choix de mon utilisateur
-        function select() {
-            // je crée une variable qui va convertir le choix utilisateur de string en number
+        //Je déclare un tableau qui contient plusieurs url
+        let urls = ["http://www.lesoir.be", "http://www.lalibre.be", "http://www.lemonde.fr"]
+        //Je crée une fonction select qui vas viser l'entrée de mon tableau correspondant au choix de mon utilisateur
+        function select(){
+            //Je crée une variable qui va convertir le choix utilisateur de string en number(entier)
             let sel = parseInt(document.getElementById("sélection").value);
-            // avec window.location.href, j'envoie l'utilisateur vers le lien contenu dans mon tableau
+            //Avec window.location.href, j'envoie l'utilisateur vers le lien contenu dans mon tableau                
             window.location.href = urls[sel - 1];
         }
     </script>
 </head>
-
 <body>
     <form>
         <select id="sélection" onchange="select()">
-            <option value="0">--- sélectionnez ---</option>
-            <option value="1">Le soir</option>
-            <option value="2">La libre</option>
-            <option value="3">Le monde</option>
+          <option value="0">--- sélectionnez ---</option>
+          <option value="1">journal Le Soir</option>
+          <option value="2">journal La Libre</option>
+          <option value="3">journal Le Monde</option>
         </select>
-    </form>
+      </form>
 </body>
-
 </html>
